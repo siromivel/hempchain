@@ -2,7 +2,12 @@
   <div id="app" class="small-container">
     <h1>🐕🐕🐕🐕🐕 Finest Shibes 🐕🐕🐕🐕🐕</h1>
 
-    <hello-doge />
+      <nav>
+        <router-link to="/">Home</router-link>
+        <router-link to="/tube">TubePage</router-link>
+         <router-link to="/grower-submission">GrowerSubmissionForm</router-link>
+      </nav>
+<router-view />
   </div>
 </template>
 

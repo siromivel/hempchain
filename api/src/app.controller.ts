@@ -11,6 +11,11 @@ export class AppController {
     res.sendFile(path.resolve('../browser/index.html'))
   }
 
+  @Get('tubes')
+  async smoot() {
+    return this.appService.getTubes()
+  }
+
   @Get('/dist/bundle.js')
   bundle(@Res() res): void {
     res.sendFile(path.resolve('../browser/dist/bundle.js'))

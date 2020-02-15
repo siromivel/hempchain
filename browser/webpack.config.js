@@ -35,7 +35,10 @@ module.exports = () => {
             ]
         },
         resolve: {
-            extensions: [".vue", ".ts", ".js",]
+            extensions: [".vue", ".ts", ".js",],
+            alias: {
+                vue: 'vue/dist/vue.js'
+            }
         },
         output: {
             path: path.resolve(__dirname, "dist/"),
