@@ -38,9 +38,7 @@
             {{this.msg}}
         </p>
         <p>
-            Valid Until
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            Valid Until date+14 (+14 days from sample date)
         </p>
         <h3>
             Harvest information
