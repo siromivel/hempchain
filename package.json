@@ -1,20 +1,20 @@
 {
-  "name": "hempchain",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-      "build:dev": "(cd browser && npx webpack --mode development && npm i && cd ../server && npm i)",
-      "db:migrate": "(cd api && ./node_modules/.bin/ts-node ./node_modules/.bin/typeorm migration:run)",
-      "format": "prettier --write \"server/src/**/*.ts\" && prettier --write \"browser/src/**/*.ts\" && prettier --write \"browser/src/**/*.tsx\"",
-      "webpack:dev": "(cd browser npx webpack --mode development --watch)",
-      "server:dev": "(cd api && npm run start:dev)",
-      "server:test": "(cd api && npm run test)",
-      "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-      "prettier": "^1.16.4"
-  }
+    "name": "hempchain",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:dev": "(cd browser && npx webpack --mode development && npm i && cd ../server && npm i)",
+        "db:migrate": "(cd api && ./node_modules/.bin/ts-node ./node_modules/.bin/typeorm migration:run)",
+        "format": "prettier --write \"server/src/**/*.ts\" && prettier --write \"browser/src/**/*.ts\" && prettier --write \"browser/src/**/*.tsx\"",
+        "webpack:dev": "(cd browser npx webpack --mode development --watch)",
+        "server:dev": "(cd api && npm run start:dev)",
+        "server:test": "(cd api && npm run test)",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "prettier": "^1.16.4"
+    }
 }

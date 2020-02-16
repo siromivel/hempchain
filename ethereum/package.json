@@ -1,0 +1,21 @@
+{
+  "name": "hempchain-ethereum",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "waffle .waffle.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ethereum-waffle": "^2.3.2",
+    "@nomiclabs/buidler": "^1.1.2",
+    "@nomiclabs/buidler-etherscan": "^1.1.2",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.7.1",
+    "ts-node": "^8.6.2",
+    "typechain": "^1.0.5",
+    "typechain-target-ethers": "^1.0.3"
+  }
+}
