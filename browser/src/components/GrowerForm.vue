@@ -9,33 +9,33 @@
         <form id="submission" @submit.prevent="handleSubmit">
         <p>
             Size
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <input type="text" v-model="sampleSize" />
+            {{this.sampleSize}}
         </p>
         <p>
             Date
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <datepicker v-model="thedate" placeholder="select test date" />
+            {{this.thedate}}
         </p>
         <p>
             Laboratory
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <input type="text" v-model="lab" />
+            {{this.lab}}
         </p>
         <p>
             Method
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <input type="text" v-model="method" />
+            {{this.method}}
         </p>
         <p>
             Range
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <input type="text" v-model="range" />
+            {{this.range}}
         </p>
         <p>
             Result (D9-THC)
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <input type="text" v-model="result" />
+            {{this.result}}
         </p>
         <p>
             Valid Until date+14 (+14 days from sample date)
@@ -45,8 +45,8 @@
         </h3>
         <p>
             Size (actual)
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <input type="text" v-model="harvestSize" />
+            {{this.harvestSize}}
         <p>
             Pass
             <select v-model="pass" >
@@ -88,11 +88,21 @@
 </template>
 
 <script>
+    import Datepicker from 'vuejs-datepicker'
     export default {
         name: 'GrowerForm',
+        components: {
+            Datepicker
+        },
         data() {
             return {
-                msg: '',
+                sampleSize: '',
+                thedate: '',
+                lab: '',
+                method: '',
+                range: '',
+                result: '',
+                harvestSize: '',
                 pass: 'No',
                 destroyed: 'No',
                 sold: 'No',
