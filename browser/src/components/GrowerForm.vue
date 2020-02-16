@@ -59,18 +59,27 @@
         </p>
         <p>
             Destroyed
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <select v-model="destroyed" >
+            <option value='Yes'>Yes </option>
+            <option value='No'>No</option>
+            </select>
+            {{destroyed}}
         </p>
         <p>
             Sold
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <select v-model="sold" >
+            <option value='Yes'>Yes </option>
+            <option value='No'>No</option>
+            </select>
+            {{sold}}
         </p>
         <p>
             Shipped
-            <input type="text" v-model="msg" />
-            {{this.msg}}
+            <select v-model="shipped" >
+            <option value='Yes'>Yes </option>
+            <option value='No'>No</option>
+            </select>
+            {{shipped}}
         </p>
         <div>
             <h2>submit</h2>
@@ -86,7 +95,10 @@
         data() {
             return {
                 msg: '',
-                pass: 'No'
+                pass: 'No',
+                destroyed: 'No',
+                sold: 'No',
+                shipped: 'No'
                 }
             },
         methods: {
