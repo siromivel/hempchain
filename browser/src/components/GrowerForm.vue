@@ -89,7 +89,8 @@
 
 <script>
     import Datepicker from 'vuejs-datepicker'
-    import { ethers } from 'ethers'
+    import Ethereum from '../web3/Ethereum'
+
     export default {
         name: 'GrowerForm',
         components: {

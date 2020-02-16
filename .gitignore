@@ -3,6 +3,7 @@
 /node_modules
 /api/node_modules
 /browser/node_modules
+/ethereum/node_modules
 
 # Logs
 logs
