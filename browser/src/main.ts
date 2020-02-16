@@ -4,6 +4,7 @@ import App from './App.vue'
 import Tube from './components/Tube.vue'
 import HelloDoge from './components/HelloDoge.vue'
 import GrowerForm from './components/GrowerForm.vue'
+import { ethers } from 'ethers'
 
 Vue.config.productionTip = false
 

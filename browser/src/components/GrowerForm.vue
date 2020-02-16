@@ -89,6 +89,7 @@
 
 <script>
     import Datepicker from 'vuejs-datepicker'
+    import { ethers } from 'ethers'
     export default {
         name: 'GrowerForm',
         components: {
