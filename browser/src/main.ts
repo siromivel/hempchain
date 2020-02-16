@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+import functions from './utils/functions.vue'
 import Tube from './components/Tube.vue'
 import HelloDoge from './components/HelloDoge.vue'
 import GrowerForm from './components/GrowerForm.vue'
-import { ethers } from 'ethers'
 
 Vue.config.productionTip = false
 

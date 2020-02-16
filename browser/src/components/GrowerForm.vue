@@ -15,7 +15,10 @@
         <p>
             Date
             <datepicker v-model="thedate" placeholder="select test date" />
-            {{this.thedate}}
+            
+            Valid Until: <br/> 
+            {{new Date(new Date(this.thedate).getTime() + 1000*60*60*24*14)}} <br/>
+            (14 days from test date)
         </p>
         <p>
             Laboratory
@@ -36,9 +39,6 @@
             Result (D9-THC)
             <input type="text" v-model="result" />
             {{this.result}}
-        </p>
-        <p>
-            Valid Until date+14 (+14 days from sample date)
         </p>
         <h3>
             Harvest information
@@ -99,6 +99,7 @@
             return {
                 sampleSize: '',
                 thedate: '',
+                validUntil: new Date(new Date(this.thedate).getTime() + 1000*60*60*24*14),
                 lab: '',
                 method: '',
                 range: '',
@@ -113,6 +114,7 @@
         methods: {
             handleSubmit() {
                 console.log(this.msg)
+
             }
         }
     }
